@@ -1,61 +1,48 @@
-# Netflix Clone
+# Front-End Clone Projects
 
-A Netflix-inspired front-end homepage made for learning and practice. This project uses HTML, CSS, and JavaScript to recreate the look and feel of a streaming service landing page.
+This repository is a collection of front-end clone projects I build for learning and practice. **Currently, it contains one project: Netflix Clone.** I plan to add more clone projects here in the future.
 
-> This is an independent educational project. It is not affiliated with Netflix and does not provide real streaming, sign-in, or membership services.
+> These are independent educational projects. They are not affiliated with the original companies or services and do not provide their real products or services.
 
-## Homepage Preview
+## Current Project
 
-<img src="screenshots/netflix-homepage-desktop.png" alt="Netflix Clone homepage" width="800">
+### Netflix Clone
 
-## Features
+A Netflix-inspired streaming homepage built with HTML, CSS, and JavaScript.
 
-- Netflix-inspired homepage design
-- Hero section with email field and call-to-action button
-- Feature sections for TV, downloads, watching on different devices, and kids profiles
-- FAQ section
-- Responsive styling for desktop and mobile screens
-- Front-end demo interactions with JavaScript
+- **Project folder:** [`Netflix_Clone/`](Netflix_Clone/)
+- **Technologies:** HTML, CSS, JavaScript
+- **Screenshot:**
 
-## Built With
+  ![Netflix Clone desktop homepage](Netflix_Clone/screenshots/netflix-homepage-desktop.png)
 
-- **HTML5** — page structure
-- **CSS3** — styling and responsive layout
-- **JavaScript** — browser-side interactions
-
-## Project Structure
+## Repository Structure
 
 ```text
-Netflix_Clone/
-├── assets/                       # Images and other project assets
-├── screenshots/
-│   └── netflix-homepage-desktop.png
-├── favicon.ico                   # Browser tab icon
-├── index.html                    # Main webpage
-├── script.js                     # Front-end interactions
-├── style.css                     # Page styles and responsive rules
-└── README.md                     # Project documentation
+frontend-clone-project/
+├── Netflix_Clone/
+│   ├── assets/
+│   ├── screenshots/
+│   │   └── netflix-homepage-desktop.png
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── script.js
+│   ├── style.css
+│   └── README.md
+└── README.md
 ```
 
-## Run the Project
+The top-level `README.md` describes this repository. The `Netflix_Clone/README.md` file can describe the Netflix project in more detail.
 
-1. Download or clone this repository.
-2. Open the `Netflix_Clone` folder.
-3. Open `index.html` in a web browser.
+## View the Project
 
-You can also open the folder in Visual Studio Code and use the Live Server extension.
+1. Open the `Netflix_Clone` folder.
+2. Open `index.html` in a web browser.
+3. Or open the folder in Visual Studio Code and use the Live Server extension.
 
-## Screenshot
+## Future Projects
 
-The desktop homepage screenshot is stored in the `screenshots` folder. To add more screenshots, put them in that folder and reference them in this README, for example:
-
-```markdown
-![Mobile homepage](screenshots/netflix-homepage-mobile.png)
-```
-
-## Learning Goals
-
-This project helped me practice semantic HTML, CSS layouts, responsive design, and basic JavaScript interactions.
+More front-end clone projects will be added to this repository as I build them. Each new project will have its own folder, source files, assets, and screenshots.
 
 ## Author
 
