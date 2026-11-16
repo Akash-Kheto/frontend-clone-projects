@@ -45,13 +45,6 @@ Netflix_Clone/
 
 You can also open the folder in Visual Studio Code and use the Live Server extension.
 
-## Screenshot
-
-The desktop homepage screenshot is stored in the `screenshots` folder. To add more screenshots, put them in that folder and reference them in this README, for example:
-
-```markdown
-![Mobile homepage](screenshots/netflix-homepage-mobile.png)
-```
 
 ## Learning Goals
 
