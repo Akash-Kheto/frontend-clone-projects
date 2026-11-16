@@ -1,0 +1,497 @@
+/* Import the fonts used throughout the page */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Store repeated colors and sizes in variables */
+:root {
+      --page-bg: #000;
+      --text-color: #fff;
+      --accent-red: #e50914;
+      --panel-bg: #2d2d2d;
+      --panel-hover: #414141;
+      --divider-color: #232323;
+}
+
+/* Remove default spacing and make element sizing easier to control */
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+/* Set the default font and page colors */
+body {
+      background-color: var(--page-bg);
+      color: var(--text-color);
+      font-family: 'Poppins', sans-serif;
+}
+
+/* Make links and buttons use the page's font */
+button,
+input {
+      font: inherit;
+}
+
+/* Show a visible outline when keyboard users focus an element */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
+}
+
+/* Hero section with a full-size background image */
+.main {
+      position: relative;
+      min-height: 644px;
+      background-image: url("assets/images/bg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+/* Dark overlay makes the hero text easier to read */
+.main .box {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.68);
+}
+
+/* Keep the navigation above the background overlay */
+nav {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: min(90%, 1200px);
+      height: 100px;
+      margin: 0 auto;
+}
+
+/* Size the logo */
+nav img {
+      display: block;
+      width: 130px;
+      height: auto;
+}
+
+/* Keep navigation buttons side by side */
+.nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+}
+
+/* Shared button styles */
+.btn {
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      border-radius: 4px;
+      background-color: rgba(20, 20, 20, 0.75);
+      color: var(--text-color);
+      cursor: pointer;
+      transition: background-color 180ms ease, transform 180ms ease;
+}
+
+/* Give buttons a small hover effect */
+.btn:hover {
+      transform: translateY(-1px);
+}
+
+/* Red button style for sign-in */
+.btn-red-sm {
+      border-color: var(--accent-red);
+      background-color: var(--accent-red);
+}
+
+/* Larger red call-to-action button */
+.btn-red {
+      border: 0;
+      background-color: var(--accent-red);
+      color: var(--text-color);
+      font-size: 18px;
+      font-weight: 600;
+      padding: 12px 24px;
+}
+
+/* Darken red buttons slightly when hovered */
+.btn-red:hover,
+.btn-red-sm:hover {
+      background-color: #b80710;
+}
+
+/* Center the hero content over the background */
+.hero {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      min-height: 520px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding: 30px;
+      text-align: center;
+}
+
+/* Main hero headline */
+.hero h1 {
+      max-width: 850px;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+}
+
+/* Style the feedback message shown after form or button actions */
+.form-status {
+      min-height: 24px;
+      max-width: 620px;
+      margin: 12px auto 0;
+      color: #fff;
+      font-size: 0.95rem;
+      text-align: center;
+}
+
+/* Hero supporting text */
+.hero p {
+      max-width: 760px;
+      font-size: 1.2rem;
+}
+
+/* Emphasize the plan price line */
+.hero .hero-price {
+      font-size: 1.35rem;
+      font-weight: 600;
+}
+
+/* Arrange the email field and button in a row */
+.hero-buttons {
+      display: flex;
+      width: min(100%, 620px);
+      align-items: stretch;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 8px;
+}
+
+/* Style the email input */
+.main input {
+      width: min(100%, 380px);
+      min-height: 52px;
+      padding: 12px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      border-radius: 4px;
+      background-color: rgba(20, 20, 20, 0.75);
+      color: var(--text-color);
+}
+
+/* Make placeholder text readable on the dark background */
+.main input::placeholder {
+      color: #d0d0d0;
+}
+
+/* Hide labels visually while keeping them available to screen readers */
+.visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      clip-path: inset(50%);
+}
+
+/* Horizontal divider between major page sections */
+.separation {
+      position: relative;
+      z-index: 2;
+      height: 7px;
+      background-color: var(--divider-color);
+}
+
+/* Feature rows: text and image/video side by side */
+.first {
+      display: flex;
+      width: min(90%, 1100px);
+      min-height: 420px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      margin: 0 auto;
+      color: var(--text-color);
+}
+
+/* Place feature content in a vertical column */
+.feature-copy {
+      flex: 1;
+}
+
+/* Feature headings */
+.feature-copy h2 {
+      margin-bottom: 12px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+}
+
+/* Feature descriptions */
+.feature-copy p {
+      font-size: clamp(1rem, 2vw, 1.35rem);
+      line-height: 1.5;
+}
+
+/* Position device images and videos relative to each other */
+.secImg {
+      position: relative;
+      flex: 1;
+      max-width: 555px;
+}
+
+/* Keep feature images responsive */
+.secImg img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+}
+
+/* Place videos inside the device image area */
+.secImg video {
+      position: absolute;
+      top: 10%;
+      left: 13%;
+      width: 73%;
+      height: 78%;
+      object-fit: contain;
+}
+
+/* Reverse the order of text and image in alternating sections */
+.first.second .secImg {
+      order: 0;
+}
+
+.first.second .feature-copy {
+      order: 1;
+}
+
+/* FAQ section spacing and heading */
+.faq {
+      padding: 55px 20px;
+      color: var(--text-color);
+}
+
+.faq h2 {
+      margin-bottom: 28px;
+      text-align: center;
+      font-size: clamp(2rem, 4vw, 3rem);
+}
+
+/* Style each clickable FAQ item */
+.faqbox {
+      width: min(100%, 900px);
+      margin: 10px auto;
+      padding: 22px 24px;
+      background-color: var(--panel-bg);
+      color: var(--text-color);
+      transition: background-color 180ms ease;
+}
+
+/* Change FAQ background on hover */
+.faqbox:hover {
+      background-color: var(--panel-hover);
+}
+
+/* Make the question row clickable */
+.faqbox summary {
+      position: relative;
+      padding-right: 36px;
+      cursor: pointer;
+      font-size: 1.25rem;
+      list-style: none;
+}
+
+/* Hide the browser's default disclosure marker */
+.faqbox summary::-webkit-details-marker {
+      display: none;
+}
+
+/* Add a plus symbol to closed FAQ items */
+.faqbox summary::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      content: "+";
+      font-size: 1.8rem;
+      line-height: 1;
+      transform: translateY(-50%);
+}
+
+/* Change the plus symbol to a minus when the answer is open */
+.faqbox[open] summary::after {
+      content: "−";
+}
+
+/* Style the answer text */
+.faqbox p {
+      margin-top: 16px;
+      color: #e5e5e5;
+      font-size: 1rem;
+      line-height: 1.6;
+}
+
+/* Center the footer and limit its width */
+footer {
+      width: min(90%, 1100px);
+      margin: 0 auto;
+      padding: 50px 0;
+      color: #b3b3b3;
+}
+
+/* Footer contact line */
+footer .questions {
+      margin-bottom: 28px;
+}
+
+/* Arrange footer link groups in four columns */
+.footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+}
+
+/* Stack links vertically within each footer column */
+.footer-item {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+}
+
+/* Footer link appearance */
+.footer a {
+      color: #b3b3b3;
+      font-size: 0.9rem;
+      text-decoration: underline;
+}
+
+/* Add a brighter color when a footer link is hovered */
+.footer a:hover {
+      color: var(--text-color);
+}
+
+/* Small text at the bottom of the footer */
+.footer-country,
+.project-note {
+      margin-top: 24px;
+      font-size: 0.9rem;
+}
+
+/* Tablet and smaller laptop layout */
+@media (max-width: 800px) {
+      .first {
+            min-height: auto;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            padding: 45px 0;
+            text-align: center;
+      }
+
+      /* Keep image and text in a sensible order on smaller screens */
+      .first.second .secImg {
+            order: 1;
+      }
+
+      .first.second .feature-copy {
+            order: 0;
+      }
+
+      .secImg {
+            width: min(100%, 500px);
+      }
+
+      .footer {
+            grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+/* Phone layout */
+@media (max-width: 520px) {
+      .main {
+            min-height: 600px;
+      }
+
+      nav {
+            height: 80px;
+      }
+
+      nav img {
+            width: 100px;
+      }
+
+      .nav-actions {
+            gap: 7px;
+      }
+
+      .btn {
+            padding: 7px 10px;
+            font-size: 0.85rem;
+      }
+
+      .hero {
+            min-height: 500px;
+            gap: 14px;
+            padding: 24px 18px;
+      }
+
+      .hero p {
+            font-size: 1rem;
+      }
+
+      .hero .hero-price {
+            font-size: 1.1rem;
+      }
+
+      /* Stack the email field and button on narrow screens */
+      .hero-buttons {
+            flex-direction: column;
+      }
+
+      .main input,
+      .hero-buttons .btn {
+            width: 100%;
+      }
+
+      .faq {
+            padding: 40px 16px;
+      }
+
+      .faqbox {
+            padding: 18px;
+      }
+
+      .faqbox summary {
+            font-size: 1.05rem;
+      }
+
+      footer {
+            padding: 40px 0;
+      }
+
+      .footer {
+            grid-template-columns: 1fr 1fr;
+            gap: 24px 14px;
+      }
+}
+
+/* Reduce animations for visitors who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+            scroll-behavior: auto !important;
+            transition-duration: 0.01ms !important;
+      }
+}

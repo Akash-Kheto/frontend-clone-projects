@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!-- Sets the character encoding so text displays correctly -->
+      <meta charset="UTF-8">
+
+      <!-- Makes the page responsive on mobile, tablet, and desktop screens -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Short description used by browsers and search engines -->
+      <meta name="description" content="A Netflix-inspired landing page built with HTML and CSS.">
+
+      <!-- Text shown in the browser tab -->
+      <title>Netflix India — Watch TV Shows Online</title>
+
+      <!-- Connects this HTML page to the CSS stylesheet -->
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <!-- Main content of the page -->
+      <main>
+
+            <!-- Hero section: navigation and main welcome message -->
+            <section class="main" aria-label="Netflix introduction">
+
+                  <!-- Top navigation bar -->
+                  <nav aria-label="Main navigation">
+                        <!-- Netflix logo; the link goes to the top of this page -->
+                        <a href="#" class="logo" aria-label="Netflix home">
+                              <img src="assets/images/logo.svg" alt="Netflix">
+                        </a>
+
+                        <!-- Language and sign-in buttons -->
+                        <div class="nav-actions">
+                              <button class="btn" type="button" aria-label="Select language">
+                                    English
+                              </button>
+
+                              <button class="btn btn-red-sm" type="button">
+                                    Sign In
+                              </button>
+                        </div>
+                  </nav>
+
+                  <!-- Decorative background overlay; hidden from screen readers -->
+                  <div class="box" aria-hidden="true"></div>
+
+                  <!-- Main headline and email form -->
+                  <div class="hero">
+                        <h1>Unlimited movies, TV shows and more</h1>
+
+                        <p class="hero-price">Plans start at ₹149. Cancel at any time.</p>
+
+                        <p>
+                              Ready to watch? Enter your email to create or restart your membership.
+                        </p>
+
+                        <!-- Email form; this demo does not connect to a real service -->
+                        <form class="hero-buttons" action="#" method="get">
+                              <label class="visually-hidden" for="email">
+                                    Email address
+                              </label>
+
+                              <!-- type="email" checks that the entered text looks like an email -->
+                              <input id="email" name="email" type="email" placeholder="Email address"
+                                    autocomplete="email" required>
+
+                              <button class="btn btn-red" type="submit">
+                                    Get Started <span aria-hidden="true">&gt;</span>
+                              </button>
+                        </form>
+                  </div>
+
+                  <!-- Decorative line between page sections -->
+                  <div class="separation"></div>
+            </section>
+
+            <!-- Feature section: watching on a TV -->
+            <section class="first" aria-labelledby="tv-heading">
+                  <div class="feature-copy">
+                        <h2 id="tv-heading">Enjoy on your TV</h2>
+                        <p>
+                              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                              Blu-ray players and more.
+                        </p>
+                  </div>
+
+                  <!-- TV image with a video placed over it by CSS -->
+                  <div class="secImg">
+                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                              alt="A television displaying a show" loading="lazy">
+
+                        <!-- Muted video can autoplay in most browsers -->
+                        <video autoplay loop muted playsinline aria-label="Video on a television">
+                              <source
+                                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                                    type="video/mp4">
+                        </video>
+                  </div>
+            </section>
+
+            <div class="separation"></div>
+
+            <!-- Feature section: downloading shows to a phone -->
+            <section class="first second" aria-labelledby="download-heading">
+                  <div class="secImg">
+                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                              alt="A show playing on a mobile phone" loading="lazy">
+                  </div>
+
+                  <div class="feature-copy">
+                        <h2 id="download-heading">Download your shows to watch offline</h2>
+                        <p>
+                              Save your favourites easily and always have something to watch.
+                        </p>
+                  </div>
+            </section>
+
+            <div class="separation"></div>
+
+            <!-- Feature section: watching on different devices -->
+            <section class="first third" aria-labelledby="everywhere-heading">
+                  <div class="feature-copy">
+                        <h2 id="everywhere-heading">Watch everywhere</h2>
+                        <p>
+                              Stream movies and TV shows on your phone, tablet, laptop and TV.
+                        </p>
+                  </div>
+
+                  <div class="secImg">
+                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                              alt="A screen showing a streaming service" loading="lazy">
+
+                        <video autoplay loop muted playsinline aria-label="Video on a device">
+                              <source
+                                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                                    type="video/mp4">
+                        </video>
+                  </div>
+            </section>
+
+            <div class="separation"></div>
+
+            <!-- Feature section: profiles for children -->
+            <section class="first second" aria-labelledby="kids-heading">
+                  <div class="secImg">
+                        <img src="https://occ-0-2849-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+                              alt="Characters from children's shows" loading="lazy">
+                  </div>
+
+                  <div class="feature-copy">
+                        <h2 id="kids-heading">Create profiles for kids</h2>
+                        <p>
+                              Give children a space made for them, with their favourite characters.
+                        </p>
+                  </div>
+            </section>
+
+            <div class="separation"></div>
+
+            <!-- Frequently asked questions section -->
+            <section class="faq" aria-labelledby="faq-heading">
+                  <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+                  <!-- The details element opens and closes when the question is clicked -->
+                  <details class="faqbox">
+                        <summary>What is Netflix?</summary>
+                        <p>
+                              Netflix is a streaming service with movies, TV shows,
+                              documentaries and more.
+                        </p>
+                  </details>
+
+                  <details class="faqbox">
+                        <summary>How much does Netflix cost?</summary>
+                        <p>
+                              Plans and prices may change. Check Netflix's official website
+                              for current details.
+                        </p>
+                  </details>
+
+                  <details class="faqbox">
+                        <summary>What can I watch on Netflix?</summary>
+                        <p>
+                              You can watch movies, TV shows, documentaries and other available titles.
+                        </p>
+                  </details>
+
+                  <details class="faqbox">
+                        <summary>Where can I watch?</summary>
+                        <p>
+                              Watch on supported TVs, phones, tablets, computers and streaming devices.
+                        </p>
+                  </details>
+            </section>
+
+            <div class="separation"></div>
+      </main>
+
+      <!-- Footer: contact information and navigation links -->
+      <footer>
+            <p class="questions">Questions? Call 000-800-919-1694</p>
+
+            <nav class="footer" aria-label="Footer links">
+                  <div class="footer-item">
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Ways to Watch</a>
+                        <a href="#">Terms of Use</a>
+                  </div>
+
+                  <div class="footer-item">
+                        <a href="#">Help Centre</a>
+                        <a href="#">Account</a>
+                        <a href="#">Speed Test</a>
+                        <a href="#">Legal Notices</a>
+                  </div>
+
+                  <div class="footer-item">
+                        <a href="#">Media Centre</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Cookie Preferences</a>
+                        <a href="#">Corporate</a>
+                  </div>
+
+                  <div class="footer-item">
+                        <a href="#">Contact Us</a>
+                        <a href="#">Only on Netflix</a>
+                  </div>
+            </nav>
+
+            <!-- Identifies the location shown in this page design -->
+            <p class="footer-country">Netflix India</p>
+
+            <!-- Makes clear that this is a student-made clone project -->
+            <p class="project-note">This is a student-made front-end clone project.</p>
+      </footer>
+      <script src="script.js" defer></script>
+</body>
+
+</html>
