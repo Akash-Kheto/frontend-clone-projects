@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!-- Set the character encoding and responsive layout for mobile screens. -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Set the text shown in the browser tab. -->
+      <title>Myntra Clone</title>
+
+      <!-- Load the page styles from the separate CSS file. -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- Load Material Symbols for the search, profile, wishlist, and bag icons. -->
+      <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+      <!-- The header contains the logo, main navigation, search, and shopping actions. -->
+      <header>
+            <!-- Link the logo to the home page. -->
+            <div class="logo_container">
+                  <a href="#" aria-label="Myntra home">
+                        <img class="myntra_home" src="images/myntra_logo.webp" alt="Myntra">
+                  </a>
+            </div>
+
+            <!-- Main navigation links. -->
+            <nav class="nav_bar" aria-label="Main navigation">
+                  <a href="#">Men</a>
+                  <a href="#">Women</a>
+                  <a href="#">Kids</a>
+                  <a href="#">Home &amp; Living</a>
+                  <a href="#">Beauty</a>
+                  <a href="#">Studio <sup>New</sup></a>
+            </nav>
+
+            <!-- Product search field. -->
+            <form class="search_bar" role="search">
+                  <label class="visually-hidden" for="product-search">Search products</label>
+                  <span class="material-symbols-outlined search_icon" aria-hidden="true">
+                        search
+                  </span>
+                  <input class="search_input" id="product-search" type="search"
+                        placeholder="Search for products, brands and more">
+            </form>
+
+            <!-- Shortcuts to the user's profile, wishlist, and shopping bag. -->
+            <div class="action_bar">
+                  <a class="action_container" href="#" aria-label="Profile">
+                        <span class="material-symbols-outlined action_icon" aria-hidden="true">
+                              person
+                        </span>
+                        <span class="action_name">Profile</span>
+                  </a>
+
+                  <a class="action_container" href="#" aria-label="Wishlist">
+                        <span class="material-symbols-outlined action_icon" aria-hidden="true">
+                              favorite
+                        </span>
+                        <span class="action_name">Wishlist</span>
+                  </a>
+
+                  <a class="action_container" href="#" aria-label="Shopping bag">
+                        <span class="material-symbols-outlined action_icon" aria-hidden="true">
+                              shopping_bag
+                        </span>
+                        <span class="action_name">Bag</span>
+                  </a>
+            </div>
+      </header>
+
+      <!-- Main page content: promotional banner and product categories. -->
+      <main>
+            <p class="search_message" role="status" aria-live="polite" hidden></p>
+
+            <!-- Main promotional banner. -->
+            <section class="banner_container" aria-label="Featured promotion">
+                  <img class="banner_image" src="images/banner.jpg" alt="Featured fashion promotion">
+            </section>
+
+            <!-- Promotional brand images. -->
+            <section aria-labelledby="brands-heading">
+                  <h1 class="category_heading" id="brands-heading">
+                        Medal Worthy Brands to Bag
+                  </h1>
+
+                  <div class="category_items">
+                        <a href="#" aria-label="Shop offer 1">
+                              <img class="sale_item" src="images/offers/1.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 2">
+                              <img class="sale_item" src="images/offers/2.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 3">
+                              <img class="sale_item" src="images/offers/3.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 4">
+                              <img class="sale_item" src="images/offers/4.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 5">
+                              <img class="sale_item" src="images/offers/5.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 6">
+                              <img class="sale_item" src="images/offers/6.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 7">
+                              <img class="sale_item" src="images/offers/7.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 8">
+                              <img class="sale_item" src="images/offers/8.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 9">
+                              <img class="sale_item" src="images/offers/9.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 10">
+                              <img class="sale_item" src="images/offers/10.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 11">
+                              <img class="sale_item" src="images/offers/11.png" alt="Brand offer">
+                        </a>
+                        <a href="#" aria-label="Shop offer 12">
+                              <img class="sale_item" src="images/offers/12.png" alt="Brand offer">
+                        </a>
+                  </div>
+            </section>
+
+            <!-- Product category images. -->
+            <section aria-labelledby="categories-heading">
+                  <h2 class="category_heading" id="categories-heading">
+                        Shop by Category
+                  </h2>
+
+                  <div class="category_items">
+                        <a href="#" aria-label="Shop category 1">
+                              <img class="sale_item" src="images/catagories/1.jpg" alt="Fashion category">
+                        </a>
+                        <a href="#" aria-label="Shop category 2">
+                              <img class="sale_item" src="images/catagories/2.jpg" alt="Fashion category">
+                        </a>
+                        <a href="#" aria-label="Shop category 3">
+                              <img class="sale_item" src="images/catagories/3.jpg" alt="Fashion category">
+                        </a>
+                        <a href="#" aria-label="Shop category 4">
+                              <img class="sale_item" src="images/catagories/4.jpg" alt="Fashion category">
+                        </a>
+                        <a href="#" aria-label="Shop category 5">
+                              <img class="sale_item" src="images/catagories/5.jpg" alt="Fashion category">
+                        </a>
+                        <a href="#" aria-label="Shop category 6">
+                              <img class="sale_item" src="images/catagories/6.jpg" alt="Fashion category">
+                        </a>
+                        <a href="#" aria-label="Shop category 7">
+                              <img class="sale_item" src="images/catagories/7.jpg" alt="Fashion category">
+                        </a>
+                        <a href="#" aria-label="Shop category 8">
+                              <img class="sale_item" src="images/catagories/8.jpg" alt="Fashion category">
+                        </a>
+                        <a href="#" aria-label="Shop category 9">
+                              <img class="sale_item" src="images/catagories/9.jpg" alt="Fashion category">
+                        </a>
+                        <a href="#" aria-label="Shop category 10">
+                              <img class="sale_item" src="images/catagories/10.jpg" alt="Fashion category">
+                        </a>
+                  </div>
+            </section>
+      </main>
+
+      <!-- The footer contains useful shopping and company links. -->
+      <footer>
+            <div class="footer_container">
+                  <!-- Shopping links. -->
+                  <div class="footer_column">
+                        <h2>Online Shopping</h2>
+                        <a href="#">Men</a>
+                        <a href="#">Women</a>
+                        <a href="#">Kids</a>
+                        <a href="#">Home &amp; Living</a>
+                        <a href="#">Beauty</a>
+                        <a href="#">Gift Cards</a>
+                        <a href="#">Myntra Insider</a>
+                  </div>
+
+                  <!-- Customer service links. -->
+                  <div class="footer_column">
+                        <h2>Customer Policies</h2>
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                  </div>
+
+                  <!-- General company links. -->
+                  <div class="footer_column">
+                        <h2>About Myntra</h2>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Corporate Information</a>
+                  </div>
+            </div>
+
+            <hr>
+
+            <!-- Copyright notice. -->
+            <p class="copyright">
+                  &copy; 2026 Myntra Clone. All rights reserved.
+            </p>
+      </footer>
+      <script src="script.js" defer></script>
+</body>
+
+</html>
